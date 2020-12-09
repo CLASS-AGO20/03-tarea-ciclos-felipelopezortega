@@ -63,6 +63,28 @@ export default class App {
         }
     }
 
+    obtenerMultiplos(inicio, fin){
+
+        let multres=""
+        let i=inicio
+        do{
+
+            if(i%3==0){
+
+                multres = multres + String(i)
+
+            }else{
+
+
+            }
+
+            i++
+
+        }while(i<=fin);
+
+        return multres
+    }
+
 
 
 
@@ -84,3 +106,6 @@ console.log(app.esPrimo(88))
 console.log(app.esPrimo(87))
 console.log(app.esPrimo(77))
 console.log(app.esPrimo(7))
+
+//Función números dividos entre 3
+console.log(app.obtenerMultiplos(10,25))
