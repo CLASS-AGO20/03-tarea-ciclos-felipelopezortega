@@ -85,6 +85,39 @@ export default class App {
         return multres
     }
 
+    obtenerImpares(numero1, numero2){
+
+        
+        if(numero1>numero2){
+
+            let newNumero1 = numero1
+            numero1 = numero2
+            numero2 = newNumero1
+
+        }else{
+        
+        }
+
+        let i = numero1
+
+        let impares = ""
+        do{
+
+            if(i%2!==0){
+
+                impares = String(i) +  "," + impares 
+            }else{
+
+            }
+
+            i++
+
+        }while(i<=numero2);
+
+        
+        return impares
+    }
+
 
 
 
@@ -109,3 +142,7 @@ console.log(app.esPrimo(7))
 
 //Función números dividos entre 3
 console.log(app.obtenerMultiplos(10,25))
+
+//Función regresa impares
+console.log(app.obtenerImpares(5,10))
+console.log(app.obtenerImpares(10,5))
