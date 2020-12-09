@@ -55,11 +55,11 @@ export default class App {
 
         if(contador>2){
 
-            return true
+            return false
 
         }else{
 
-            return false
+            return true
         }
     }
 
@@ -139,6 +139,9 @@ console.log(app.esPrimo(88))
 console.log(app.esPrimo(87))
 console.log(app.esPrimo(77))
 console.log(app.esPrimo(7))
+console.log(app.esPrimo(1))
+console.log(app.esPrimo(2))
+console.log(app.esPrimo(3))
 
 //Función números dividos entre 3
 console.log(app.obtenerMultiplos(10,25))
