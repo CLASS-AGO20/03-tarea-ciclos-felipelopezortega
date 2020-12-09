@@ -33,7 +33,35 @@ export default class App {
         return suma
 
     }
+    
+    esPrimo(numero){
+       
+        let i=1
+        let contador=0
 
+        do{
+            if(numero%i==0){
+
+                contador++
+
+            }else{
+                
+                
+            }
+
+            i++
+            
+        }while(i<=numero);
+
+        if(contador>2){
+
+            return true
+
+        }else{
+
+            return false
+        }
+    }
 
 
 
@@ -50,3 +78,9 @@ console.log(app.sumatoriaSerieUno(6))
 
 //Función dos
 console.log(app.sumatoriaSerieDos(7))
+
+//Función número primo
+console.log(app.esPrimo(88))
+console.log(app.esPrimo(87))
+console.log(app.esPrimo(77))
+console.log(app.esPrimo(7))
