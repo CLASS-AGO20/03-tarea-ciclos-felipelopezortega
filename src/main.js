@@ -14,24 +14,26 @@ export default class App {
 
     sumatoriaSerieDos(numero2){
 
-        let suma = 1
+        let i=2
+        let suma=1
         let sumap
         let sumar
         let sumatotal 
-
-        for(let i=2; i<=numero2 ; i = i + 1){
+    
+        while(i<=numero2){
 
             if(i%2!=0){
 
-                sumar = suma -1/i
+                sumar = suma + (-1/i)
             }else{
 
                 sumap= suma + 1/i
             }
-                
             sumatotal= sumap + sumar
+            i++
         }
-         return suma
+         
+        return sumatotal
 
     }
 
@@ -50,4 +52,4 @@ let app = new App();
 console.log(app.sumatoriaSerieUno(6))
 
 //Función dos
-console.log(app.sumatoriaSerieDos(6))
+console.log(app.sumatoriaSerieDos(8))
