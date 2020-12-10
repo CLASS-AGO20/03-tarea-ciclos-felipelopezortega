@@ -115,7 +115,7 @@ export default class App {
         }while(i<=numero2);
 
         
-        return impares
+        return impares.substr(0,impares.length-1)
     }
 
 
